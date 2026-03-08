@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="logo-petit.png" href="Images-logo/logo-petit.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/script.js" defer></script>
+  <title>Formulaire</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="Images-logo/logo.png" alt="logo" height="115" width="115">
+
+    <!-- Bouton burger -->
+    <button class="burger" id="burger">☰</button>
+
+
+    <!-- Menu de navigation -->
+    <nav class="nav" id="nav">
+      <ul class="header__list">
+        <li class="header__item"><a href="index.html" class="header__link">Accueil</a></li>
+        <li class="header__item"><a href="activite.html" class="header__link">Activités</a></li>
+        <li class="header__item"><a href="galerie.html" class="header__link">Galerie</a></li>
+        <li class="header__item"><a href="apropos.html" class="header__link">A propos</a></li>
+        <li class="header__item"><a href="formulaire.html" class="header__link">S'inscrire</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+  <div class="inscription">
+    <h3>Inscription</h3>
+    <h2>Inscrivez-vous à une activité</h2>
+    <p class="info_form">Remplissez ce formulaire pour vous inscrire à l'activité de votre choix. Le paiement s'effectue
+      directement à la mairie de Simpson City.</p>
+  </div>
+  <form div class="bloc">
+
+    <h2 class="informations_personnelles">informations personnelles</h2>
+
+    <div class="bloc_texte">
+      <div class="np">
+        <div class="prenom">
+          <label for="prénom">Prénom *</label>
+          <input type="text" id="Prénom" name="Prénom" placeholder="votre prénom" required>
+        </div>
+        <div class="nom">
+          <label for="nom">Nom *</label>
+          <input type="text" id="Nom" name="Nom" placeholder="votre nom" required>
+        </div>
+      </div>
+
+      <div class="age">
+        <label for="age">Age</label>
+        <input type="age" id="age" name="age" placeholder="votre age">
+      </div>
+
+      <div class="adresse">
+        <label for="email">Adresse e-mail *</label>
+        <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+      </div>
+
+
+      <div class="activité">
+        <h2 class="choix_activité">Choix de l'activité *</h2>
+        <label for="activité">Activité </label>
+        <select id="activité" required>
+          <option disabled selected>-- Selectionner --</option>
+          <option value="peinture">Peinture</option>
+          <option value="théâtre">Théâtre</option>
+          <option value="sport">Sport</option>
+          <option value="musique">Musique</option>
+        </select>
+      </div>
+
+      <div class="message">
+        <h2 class="information_complémentaires">Information complémentaires</h2>
+        <label for="message">Message (optionnel)</label>
+        <textarea id="message" name="message" rows="4" cols="40"
+          placeholder="Questions, besoins spécifiques..."></textarea>
+      </div>
+
+    </div>
+
+    <div class="info">
+      <div class="text_info">
+        <h2>Information importante</h2>
+        <p>Cette inscription vous sera confirmée par email. Le paiment s'effectura directement à la mairie de Simpson
+          City après validation de votre inscription</p>
+      </div>
+    </div>
+
+    <div class="button">
+      <button class="réinitialiser" type="reset">réinitialiser </button>
+      <button class="envoyer" type="submit">Envoyer</button>
+    </div>
+
+    <p class="champs">* Champs obligatoires</p>
+
+  </form>
+
+
+
+
+  <footer>
+   
+    <h3>Contact</h3>
+    <a href="formulaire_bénévole.html">formulaire bénévole</a>
+    <p>contact@alsc-simpson.fr</p>
+    
+    <p>Mairie de Simpson City
+      Place de la République
+      12345 Simpson City</p>
+    <p>01 23 45 67 89</p>
+    <h3>Suivez-nous</h3>
+    <a href="facebook"> facebook</a>
+
+
+    <div class="last">
+      <p>© 2025 ALSC - Association de Loisirs de Simpson City.</p>
+      <p>Tous droits réservés.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
